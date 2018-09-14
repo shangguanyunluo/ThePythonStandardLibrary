@@ -1,6 +1,4 @@
 import os
-import string
-
 
 def replace(file, search_for, replace_with):
     # replace strings in a text file
@@ -28,3 +26,21 @@ def replace(file, search_for, replace_with):
 
 
 replace("hello.py", "again", "world")
+
+print("-" * 20)
+
+for file in os.listdir("../001builtin_lib"):
+    print(file)
+
+print("-" * 20)
+
+cwd = os.getcwd()
+print("1", cwd)
+
+os.chdir("../002exceptions")
+print("2", os.getcwd())
+
+os.chdir(os.pardir)
+print("3", os.getcwd())
+
+
