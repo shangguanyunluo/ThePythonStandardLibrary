@@ -6,4 +6,8 @@ if os.name == "nt":
 else:
     command = "ls -l"
 
-os.system(command)
+# os.system(command)
+
+print("-" * 20)
+
+
